@@ -1,0 +1,54 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "name": "WWE Champion Belt",
+      "imageUrl": "images/belt.jpg"
+    },
+    {
+      "id": 2,
+      "name": "BFG-9000",
+      "imageUrl": "images/bfg.jpg"
+    },
+    {
+      "id": 3,
+      "name": "The People's Eyebrow",
+      "imageUrl": "images/eyebrow.jpg"
+    },
+    {
+      "id": 4,
+      "name": "Nemean Lion Hat",
+      "imageUrl": "images/hat.jpg"
+    },
+    {
+      "id": 5,
+      "name": "San Andreas Helicopter",
+      "imageUrl": "images/helicopter.jpg"
+    },
+    {
+      "id": 6,
+      "name": "Maui's Magical Fish Hook",
+      "imageUrl": "images/hook.jpg"
+    },
+    {
+      "id": 7,
+      "name": "Cheat Day",
+      "imageUrl": "images/muchpizza.jpg"
+    },
+    {
+      "id": 8,
+      "name": "Jumanji Pieces",
+      "imageUrl": "images/pieces.jpg"
+    },
+    {
+      "id": 9,
+      "name": "Tank-SUV",
+      "imageUrl": "images/suv.jpg"
+    },
+    {
+      "id": 10,
+      "name": "Tooth Fairy Wand",
+      "imageUrl": "images/wand.jpg"
+    }
+  ]
+}

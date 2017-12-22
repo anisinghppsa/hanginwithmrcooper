@@ -1,0 +1,19 @@
+{
+  "compilerOptions": {
+    "outDir": "./dist/",
+    "sourceMap": true,
+    "noImplicitAny": true,
+    "module": "commonjs",
+    "target": "es5",
+    "jsx": "react",
+    "baseUrl": ".",
+    "paths": {
+      "components": ["src/components"],
+      "models": ["src/models"],
+      "api": ["src/api"]
+    }
+  },
+  "include": [
+    "./src/**/*"
+  ]
+}
