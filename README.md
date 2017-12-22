@@ -1,7 +1,7 @@
 # Hangin' with Mr. Cooper
 1. Create static HTML page
 2. Model data via TypeScript interfaces/classes
-3. Implement a project list component
+3. Implement a product list component
 4. Determine different states for the shopping cart component
 5. Implement the shopping cart component
 6. Lift state to parent component
