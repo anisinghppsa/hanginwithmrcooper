@@ -1,4 +1,4 @@
-# Hangin' with Mr. Cooper
+![alt text](http://static.tvtropes.org/pmwiki/pub/images/hangin_with_mr_cooper.jpg "Hangin' with Mr. Cooper")
 1. Create static HTML page
 2. Model data via TypeScript interfaces/classes
 3. Implement a product list component
