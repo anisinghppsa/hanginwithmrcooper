@@ -11,6 +11,12 @@
 #### Javascript
 + [Javascript Objects (pls skip the assessment)](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Objects)
 
+### Useful Links
++ [ReactJS Documentation & Tutorial](https://reactjs.org/docs/hello-world.html)
++ [TypeScript Documentation](https://www.typescriptlang.org/docs/home.html)
++ [Lodash Documentation](https://lodash.com/docs/)
++ [MomentJS Documentation](https://momentjs.com/docs/)
+
 ## Dwayne "The Store" Johnson
 1. Create static HTML page
 2. Model data via TypeScript interfaces/classes
