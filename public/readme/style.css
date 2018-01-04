@@ -1,0 +1,83 @@
+/* Page Setup */
+body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: plum;
+}
+
+.content {
+    width: 978px;
+    margin: 0 auto;
+    background-color: ghostwhite;
+    box-shadow: 2px 0px 10px darkslategrey;
+}
+
+.content > .title {
+    color: lightslategray;
+    padding: 1rem 0;
+    margin: 0 2rem 1rem 2rem;
+    border-bottom: 1px solid lightslategrey;
+}
+
+input:disabled {
+    cursor: not-allowed;
+}
+
+/* Controls */
+.controls {
+    margin: 0 2rem;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid lightslategrey;
+    display: flex;
+}
+
+.control {
+    padding: 0 1rem;
+    border-right: 1px solid lightslategrey;
+}
+
+.control:last-child {
+    border: none;
+}
+
+/* Book List */
+.book-list {
+    margin-top: 1rem;
+}
+
+/* Book Item */
+.book-item {
+    min-height: 3rem;
+    color: black;
+    background-color: paleturquoise;
+    display: flex;
+    padding: 1rem;
+}
+
+.book-item:not(:last-child) {
+    border-bottom: 1px solid ghostwhite;
+}
+
+.book-item > .column {
+    display: flex;
+    flex: 1 1 20rem;
+    flex-direction: column;
+}
+
+.book-item-property { 
+    padding-bottom: 0.5rem;
+}
+
+.book-item-property:last-child {
+    padding-bottom: 0;
+}
+
+.book-item-property .label {
+    display: inline;
+}
+
+.book-item-property > .label::after {
+    content: ':';
+    margin-right: 0.5rem;
+}

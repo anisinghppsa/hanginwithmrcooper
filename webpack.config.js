@@ -17,7 +17,7 @@ module.exports = {
     hot: true
   },
   resolve: {
-    extensions: [ '.ts', '.tsx', '.js', '.jsx', '.json' ],
+    extensions: [ '.ts', '.tsx', '.js', '.jsx', '.json', '.css' ],
     alias: {
       api: path.join(__dirname, 'src/api'),
       components: path.join(__dirname, 'src/components'),

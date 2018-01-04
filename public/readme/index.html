@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>README</title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <script type="text/javascript" src="script.js"></script>
+    </head>
+    <body>
+        <div class="content">
+            <h1 class="title">
+                README
+            </h1>
+            <div class="controls">
+                <div class="control">
+                    <select id="filterSelect">
+                        <option selected value="">Filter by...</option>
+                        <option value="title">Title</option>
+                        <option value="author">Author</option>
+                        <option value="genre">Genre</option>
+                    </select>
+                    <input placeholder="Please select a filter" id="filterInput"/>
+                </div>
+                <div class="control">
+                    Book length:
+                    <label>
+                        <input checked name="bookLength" value="all" type="radio" />
+                        All
+                    </label>
+                    <label>
+                        <input name="bookLength" value="short" type="radio" />        
+                        Short
+                    </label>
+                    <label>
+                        <input name="bookLength" value="medium" type="radio" />
+                        Medium
+                    </label>
+                    <label>
+                        <input name="bookLength" value="long" type="radio" />
+                        Long
+                    </label>
+                </div>
+                <div class="control">
+                    <label>
+                        <input name="markAllAsRead" type="checkbox" />
+                        Mark all as read
+                    </label>
+                </div>
+            </div>
+            <div class="book-list">
+            </div>
+        </div>
+
+        <script>
+            function render(books) {
+                let list = document.querySelector('.book-list');
+                list.innerHTML = '';
+
+                books.forEach((book) => {
+                    list.appendChild(renderItem(book));
+                });
+            }
+
+            function renderItem(book) {
+                let item = document.createElement('div');
+                item.className = 'book-item'
+
+                let leftColumn = document.createElement('div')
+                leftColumn.className = 'column'
+
+                let rightColumn = document.createElement('div');
+                rightColumn.className = 'column';
+
+                const title = renderItemProperty('Title', book.title, 'title')
+                const author = renderItemProperty('Author', book.author, 'author');
+                const genres = renderItemProperty('Genres', book.genres.join(', '), 'genres');
+                const pages = renderItemProperty('Pages', book.pages, 'pages');
+
+                let readStatus = document.createElement('div');
+                readStatus.className = 'book-item-property read';
+                let readLabel = document.createElement('label');
+                let readText = document.createElement('h3');
+                readText.className = 'label';
+                readText.innerText = 'Read?';
+                readLabel.appendChild(readText);
+                let readCheckbox = document.createElement('input');
+                readCheckbox.setAttribute('type', 'checkbox');
+                readCheckbox.onchange = (e) => onToggleReadStatus(e, book.title);
+                book.read && readCheckbox.setAttribute('checked', 'checked');
+                readLabel.appendChild(readCheckbox);
+                readStatus.appendChild(readLabel);
+
+                leftColumn.appendChild(title)
+                leftColumn.appendChild(author)
+                leftColumn.appendChild(genres)
+                rightColumn.appendChild(pages)
+                rightColumn.appendChild(readStatus);
+
+                item.appendChild(leftColumn);
+                item.appendChild(rightColumn);
+
+                return item;
+            }
+
+            function renderItemProperty(propertyLabel, propertyValue, className) {
+                let el = document.createElement('div');
+                el.className = `book-item-property ${className}`;
+                let label = document.createElement('h3');
+                label.className = 'label';
+                label.innerText = propertyLabel;
+                let value = document.createElement('span');
+                value.className = 'value';
+                value.innerText = propertyValue;
+                el.appendChild(label)
+                el.appendChild(value);
+
+                return el;
+            }
+
+            function filterBooks(filterBy, filterString) {
+                document.querySelectorAll('input[name=bookLength]').forEach(node => {
+                    node.checked = node.value === 'all';
+                });
+
+                switch(filterBy) {
+                    case 'author':
+                        return filterByAuthor(books, filterString);
+                    case 'title':
+                        return filterByTitle(books, filterString);
+                    case 'genre':
+                        return filterByGenre(books, filterString);
+                    default:
+                        return books;
+                }
+            }
+
+            function onBookLengthChange(e) {
+                document.querySelector('#filterInput').value = '';
+                render(
+                    filterByLength(books, e.target.value)
+                );
+            }
+
+            function onFilterSelectChange(e) {
+                const text = document.querySelector('#filterInput');
+                if(!e.target.value) {
+                    text.value = '';
+                    text.disabled = true;
+                    text.setAttribute('placeholder', 'Please select a filter');
+                } else {
+                    text.setAttribute('placeholder', '');
+                    text.disabled = false;
+                }
+                render(
+                    filterBooks(e.target.value, text.value)
+                );
+            }
+
+            function onFilterTextChange(e) {
+                const filterBy = document.querySelector('#filterSelect').value;
+                render(
+                    filterBooks(filterBy, e.target.value)
+                );
+            }
+
+            function onToggleReadStatus(e, title) {
+                books = toggleReadStatus(books, title, e.target.checked);
+                render(books);
+            }
+
+            function onToggleAllReadStatus(e) {
+                books = toggleAllReadStatus(books, e.target.checked);
+                render(books);
+            }
+
+            let filterSelect = document.querySelector('#filterSelect');
+            filterSelect.value = '';
+            filterSelect.onchange = onFilterSelectChange;
+
+            let filterText = document.querySelector('#filterInput');
+            filterText.value = '';
+            filterText.disabled = true;
+            filterText.onkeyup = onFilterTextChange;
+
+            let bookLength = document.querySelectorAll('input[name=bookLength]');
+            bookLength.forEach((node) => {
+                node.checked = node.value === 'all';
+                node.onchange = onBookLengthChange;
+            });
+
+            let markAll = document.querySelector('input[name=markAllAsRead]');
+            markAll.checked = false;
+            markAll.onchange = onToggleAllReadStatus;
+
+            render(books);
+        </script>
+    </body>
+</html>
