@@ -23,7 +23,7 @@ To run the project (this can be from a regular cmd/terminal window):
 ```bash
 cd hanginwithmrcooper
 npm install
-npm run
+npm start
 ```
 
 If you don't see any terrifying red text or get flooded with errors, you should be able to navigate to
