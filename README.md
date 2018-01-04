@@ -72,6 +72,11 @@ toggleAllReadStatus(Array<Book>, boolean) => Array<Book>
 
 Once these constants, variables, and functions are in place, you should have a functioning (and horribly colored) little application.
 
+#### Useful Links
++ [Arrays](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array)
++ [Objects](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object)
++ [Spread syntax](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Spread_operator)
+
 ## Dwayne "The Store" Johnson
 
 Navigate to  
