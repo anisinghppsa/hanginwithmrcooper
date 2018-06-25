@@ -7,10 +7,32 @@
 
 #### CSS
 + [CSS Course (pls skip assessments and anything related to tables)](https://developer.mozilla.org/en-US/docs/Learn/CSS)
-+ [Assessment: Creating a letter head (pls add this to the previous assessment)](https://developer.mozilla.org/en-US/docs/Learn/CSS/Styling_boxes/Creating_fancy_letterheaded_paper)
 
 #### Javascript
-+ [Javascript Objects (pls skip the assessment)](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Objects)
+##### General
++ [Arrays](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array)
++ [Objects](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object)
++ [Spread operator](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Spread_operator)
++ [Rest parameters](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/rest_parameters)
+
+##### React
++ [Overview](https://reactjs.org/docs/react-api.html)
++ [Components](https://reactjs.org/docs/react-component.html)
++ [Tutorial](https://reactjs.org/tutorial/tutorial.html)
+
+##### TypeScript
++ [Basics](https://www.typescriptlang.org/docs/handbook/basic-types.html)
++ [Variable Declarations](https://www.typescriptlang.org/docs/handbook/variable-declarations.html)
++ [Interfaces](https://www.typescriptlang.org/docs/handbook/interfaces.html)
++ [Classes](https://www.typescriptlang.org/docs/handbook/classes.html)
++ [Functions](https://www.typescriptlang.org/docs/handbook/functions.html)
++ [Generics](https://www.typescriptlang.org/docs/handbook/generics.html)
++ [Enums](https://www.typescriptlang.org/docs/handbook/enums.html)
++ [Type Inference](https://www.typescriptlang.org/docs/handbook/type-inference.html)
+
+##### Lodash
+This is just for reference, but make sure you understand chaining and are familiar with the common iteration functions like map, filter, and reduce.
++ [Lodash Documentation](https://lodash.com/docs/)
 
 # Project Stuff
 
@@ -72,10 +94,6 @@ toggleAllReadStatus(Array<Book>, boolean) => Array<Book>
 
 Once these constants, variables, and functions are in place, you should have a functioning (and horribly colored) little application.
 
-#### Useful Links
-+ [Arrays](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array)
-+ [Objects](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object)
-+ [Spread syntax](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Spread_operator)
 
 ## Dwayne "The Store" Johnson
 
@@ -88,13 +106,7 @@ in your browser to view this skeleton.
 1. Create static HTML page
 2. Model data via TypeScript interfaces/classes
 3. Implement a product list component
-4. Determine different states for the shopping cart component
-5. Implement the shopping cart component
-6. Lift state to parent component
-7. Allow product list and shopping cart components to communicate via their parent
-
-#### Useful Links
-+ [ReactJS Documentation & Tutorial](https://reactjs.org/docs/hello-world.html)
-+ [TypeScript Documentation](https://www.typescriptlang.org/docs/home.html)
-+ [Lodash Documentation](https://lodash.com/docs/)
-+ [MomentJS Documentation](https://momentjs.com/docs/)
+4. Implement the shopping cart component
+5. Lift state to parent component
+6. Allow product list and shopping cart components to communicate via their parent
+7. (Optional) Create a component to display and edit a product's rating
