@@ -43,6 +43,7 @@ To get the source code on your machine, open up Git Bash, navigate to the folder
 ```bash
 git clone https://github.com/strictlyaformality/hanginwithmrcooper
 ```
+**Tip:** You can **paste** into a bash/cmd window by **right-clicking** on it.
 
 To run the project (this can be from a regular cmd/terminal window):
 ```bash
