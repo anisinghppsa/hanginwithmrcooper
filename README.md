@@ -2,7 +2,7 @@
 
 # Preliminary Stuff
 ## Install Before Proceeding
-Install of the components checked by default in the wizard.
+Install all of the components checked by default in the wizard.
 + [Git (for Windows!)](https://git-scm.com/download/win)
 ## Some light reading
 #### HTML
