@@ -1,6 +1,9 @@
 ![alt text](http://static.tvtropes.org/pmwiki/pub/images/hangin_with_mr_cooper.jpg "Hangin' with Mr. Cooper")
 
 # Preliminary Stuff
+## Install Before Proceeding
+Install of the components checked by default in the wizard.
++ [Git (for Windows!)](https://git-scm.com/download/win)
 ## Some light reading
 #### HTML
 + [Introduction to HTML](https://developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_HTML)
