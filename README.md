@@ -4,6 +4,9 @@
 ## Install Before Proceeding
 Install all of the components checked by default in the wizard.
 + [Git (for Windows!)](https://git-scm.com/download/win)
+## Playgrounds
++ [JSFiddle](http://jsfiddle.net/)
++ [TypeScript Playground](http://www.typescriptlang.org/play/)
 ## Some light reading
 #### HTML
 + [Introduction to HTML](https://developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_HTML)
@@ -59,13 +62,15 @@ localhost:8080
 in your browser to view the application skeleton.
 
 ## README: A reading list
-Navigate to  
+Navigate to
 ```
 localhost:8080/readme
 ```
 in your browser to view this skeleton.
 
 **Note**: All constants, variables, and functions should be defined in the **readme/script.js** file
+
+Can't or don't want to download anything? [Click me instead.](https://jsfiddle.net/dedpahn/8wankyqs/31/)
 
 1. Define an array of books named **books**. You should **let** this array be variable. A book is comprised of **5** properties: 
   + title (a unique **string**)
