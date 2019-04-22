@@ -34,11 +34,16 @@ Install all of the components checked by default in the wizard.
 + [Functions](https://www.typescriptlang.org/docs/handbook/functions.html)
 + [Generics](https://www.typescriptlang.org/docs/handbook/generics.html)
 + [Enums](https://www.typescriptlang.org/docs/handbook/enums.html)
++ [Namespaces](https://www.typescriptlang.org/docs/handbook/namespaces.html)
 + [Type Inference](https://www.typescriptlang.org/docs/handbook/type-inference.html)
 
 ##### Lodash
 This is just for reference, but make sure you understand chaining and are familiar with the common iteration functions like map, filter, and reduce.
 + [Lodash Documentation](https://lodash.com/docs/)
+
+##### Moment
+This is also just for reference. Note that "moment" objects are mutable, so make sure you understand how to go about creating new instances from existing ones and manipulating them from there.
++ [Moment Documentation](https://momentjs.com/docs/)
 
 # Project Stuff
 
@@ -118,4 +123,6 @@ in your browser to view this skeleton.
 4. Implement the shopping cart component
 5. Lift state to parent component
 6. Allow product list and shopping cart components to communicate via their parent
-7. (Optional) Create a component to display and edit a product's rating
+7. (BONUS 1) Create a component to display and edit a product's rating
+8. (BONUS 2) Create a section for adding new products, only accessible by admins
+9. (BONUS 3) Allow admins to also edit existing items
