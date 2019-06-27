@@ -117,12 +117,11 @@ localhost:8080
 ```
 in your browser to view this skeleton.
 
-1. Create static HTML page
-2. Model data via TypeScript interfaces/classes
-3. Implement a product list component
-4. Implement the shopping cart component
-5. Lift state to parent component
-6. Allow product list and shopping cart components to communicate via their parent
-7. (BONUS 1) Create a component to display and edit a product's rating
-8. (BONUS 2) Create a section for adding new products, only accessible by admins
-9. (BONUS 3) Allow admins to also edit existing items
+1. Model data via TypeScript interfaces
+2. Implement a product list component
+3. Implement the shopping cart component
+4. Lift state to parent component
+5. Allow product list and shopping cart components to communicate via their parent
+6. (BONUS 1) Create a component to display and edit a product's rating
+7. (BONUS 2) Create a section for adding new products, only accessible by admins
+8. (BONUS 3) Allow admins to also edit existing items
