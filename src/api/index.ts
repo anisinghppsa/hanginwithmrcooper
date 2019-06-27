@@ -1,7 +1,6 @@
 export interface ProductDataModel {
   id: number;
-  name: string;
-  imageUrl: string;
+  // Fill in DATA MODEL (use data.json for reference) 
 }
 
 const data = require("./data");
