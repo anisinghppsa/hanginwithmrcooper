@@ -25,6 +25,8 @@ Install all of the components checked by default in the wizard.
 + [Overview](https://reactjs.org/docs/react-api.html)
 + [Components](https://reactjs.org/docs/react-component.html)
 + [Tutorial](https://reactjs.org/tutorial/tutorial.html)
++ [Hooks](https://reactjs.org/docs/hooks-intro.html)
++ [Router](https://reacttraining.com/react-router/web/example/basic)
 
 ##### TypeScript
 + [Basics](https://www.typescriptlang.org/docs/handbook/basic-types.html)
@@ -66,11 +68,12 @@ in your browser to view the application skeleton.
 
 ## Dwayne "The Store" Johnson
 
-1. Model data via TypeScript interfaces
-2. Implement a product list component
-3. Implement the shopping cart component
-4. Lift state to parent component
-5. Allow product list and shopping cart components to communicate via their parent
-6. (BONUS 1) Create a component to display and edit a product's rating
-7. (BONUS 2) Create a section for adding new products, only accessible by admins
-8. (BONUS 3) Allow admins to also edit existing items
+1. Implement a login form component for the login page. This page should use the **login** API function.
+2. Implement a product list component for the store page. Each list item should display the product's image, name, price, and rating. Clicking on the image or the name should bring the user to a detail page for that particular item.
+3. Implement the shopping cart component. This should show a list of items, similar to the product list. Additionally, the quantity of the item and the total price should be shown per entry. A total for the entire cart should be displayed at the bottom of the list. Use the **checkout** API function to checkout.
+4. Allow products to be added to the cart via the product list component. Users should be able to enter a quanity they want to add to the cart. The quantity should be able to exceed the item stock.
+5. Implement an item details page. This should show a larger image of the item, as well as its name, price, rating, and description. If user is an admin, they should be able to edit the product details. Use the **isAdmin** API function for determining if the user is an admin. The **useParams** hook might be useful here.
+6. Enhance the shopping cart to display the user's name and account balance. If the cart total exceeds the account balance, the user should not be able to checkout.
+6. Add error handling to the application. API calls will fail if the user is not logged in. The user should be redirected to the login page in these cases.
+7. Add a route for logging out. Also add the appropriate link to **App.tsx**. Redirect to the login page after successfully logging out.
+8. Convert all class components to functional components. Use the hooks API as necessary to regain functionality.
