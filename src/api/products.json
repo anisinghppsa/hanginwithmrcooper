@@ -6,7 +6,8 @@
       "imageUrl": "images/belt.jpg",
       "price": "$35,109.46",
       "rating": 1,
-      "description": "Holds up even the heaviest of pants."
+      "description": "Holds up even the heaviest of pants.",
+      "stock": 19
     },
     {
       "id": 2,
@@ -14,7 +15,8 @@
       "imageUrl": "images/bfg.jpg",
       "price": "$11.01",
       "rating": 4,
-      "description": "A very large plasma weapon."
+      "description": "A very large plasma weapon.",
+      "stock": 11
     },
     {
       "id": 3,
@@ -22,7 +24,8 @@
       "imageUrl": "images/eyebrow.jpg",
       "price": "$65.10",
       "rating": 1,
-      "description": "I know you can smell it."
+      "description": "I know you can smell it.",
+      "stock": 8
     },
     {
       "id": 4,
@@ -30,7 +33,8 @@
       "imageUrl": "images/hat.jpg",
       "price": "$107.87",
       "rating": 2,
-      "description": "100% Unbleached Lion Face"
+      "description": "100% Unbleached Lion Face",
+      "stock": 15
     },
     {
       "id": 5,
@@ -38,7 +42,8 @@
       "imageUrl": "images/helicopter.jpg",
       "price": "$449.85",
       "rating": 3,
-      "description": "It's not your fault I couldn't think of a better pun."
+      "description": "It's not your fault I couldn't think of a better pun.",
+      "stock": 13
     },
     {
       "id": 6,
@@ -46,7 +51,8 @@
       "imageUrl": "images/hook.jpg",
       "price": "priceless",
       "rating": 5,
-      "description": "You're welcome."
+      "description": "You're welcome.",
+      "stock": 3
     },
     {
       "id": 7,
@@ -54,7 +60,8 @@
       "imageUrl": "images/muchpizza.jpg",
       "price": "$707.73",
       "rating": 2,
-      "description": "You pay for what you don't eat."
+      "description": "You pay for what you don't eat.",
+      "stock": 2
     },
     {
       "id": 8,
@@ -62,7 +69,8 @@
       "imageUrl": "images/pieces.jpg",
       "price": "$1.00",
       "rating": "N/A",
-      "description": "You won't be able to stop playing."
+      "description": "You won't be able to stop playing.",
+      "stock": 14
     },
     {
       "id": 9,
@@ -70,7 +78,8 @@
       "imageUrl": "images/suv.jpg",
       "price": "$486,456.75",
       "rating": 3,
-      "description": "A pretty cool car."
+      "description": "A pretty cool car.",
+      "stock": 7
     },
     {
       "id": 10,
@@ -78,7 +87,8 @@
       "imageUrl": "images/wand.jpg",
       "price": "$188.79",
       "rating": 0,
-      "description": "This movie shouldn't have existed."
+      "description": "This movie shouldn't have existed.",
+      "stock": 0
     }
   ]
 }

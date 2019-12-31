@@ -9,7 +9,8 @@ export type UserDataModel = {
   email: string,
   password: string,
   accountBalance: string,
-  name: string
+  name: string,
+  admin: boolean
 }
 
 const productData = require("./products");
@@ -48,21 +49,6 @@ export const getProductById = (id: number): Promise<ProductDataModel> => {
   })
 };
 
-export const getProductRating = (id: number): Promise<string> => {
-  return new Promise<string>((resolve, reject) => {
-    const model = productData.products.find((product: ProductDataModel) => product.id === id);
-    setTimeout(function() {
-      if (!isLoggedIn()) {
-        reject(notLoggedIn);
-      } else if (model) {
-        resolve(model);
-      } else {
-        reject(productNotFound);
-      }
-    }, delay)
-  })
-}
-
 export const login = (email: string, password: string): Promise<any> => {
   return new Promise<string>((resolve, reject) => {
     const user = userData.users.find((user: UserDataModel) => user.email === email && user.password === password);
@@ -75,6 +61,10 @@ export const login = (email: string, password: string): Promise<any> => {
       }
     }, delay)
   })
+}
+
+export const logout = async () => {
+  localStorage.removeItem("userId")
 }
 
 export const getUserName = (): Promise<string> => {
@@ -98,6 +88,20 @@ export const getUserAccountBalance = (): Promise<string> => {
       if (id != null) {
         const user: UserDataModel = userData.users.find((user: UserDataModel) => user.id === +id);
         resolve(user.accountBalance);
+      } else {
+        reject(notLoggedIn);
+      }
+    }, delay);
+  })
+}
+
+export const isAdmin = (): Promise<boolean> => {
+  return new Promise<boolean>((resolve, reject) => {
+    const id = localStorage.getItem("userId");
+    setTimeout(function() {
+      if (id != null) {
+        const user: UserDataModel = userData.users.find((user: UserDataModel) => user.id === +id);
+        resolve(user.admin);
       } else {
         reject(notLoggedIn);
       }

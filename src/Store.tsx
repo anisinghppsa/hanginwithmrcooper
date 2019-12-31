@@ -19,7 +19,7 @@ export const Store: React.SFC = props => {
             </div>
             {
                 !isLoggedIn() &&
-                <Redirect to="/login" />
+                <Redirect to="/" />
             }
         </div>
     );
