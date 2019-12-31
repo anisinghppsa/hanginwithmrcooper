@@ -1,4 +1,8 @@
 import * as React from 'react';
+import { isLoggedIn } from "./api";
+import { BrowserRouter as Router, Switch, Route} from 'react-router-dom';
+import { Login } from './Login';
+import { Store } from './Store';
 
 export const App: React.SFC = () => {
     return (
@@ -11,20 +15,23 @@ export const App: React.SFC = () => {
                     </div>
                 </div>
             </section>
-            <div className="container is-fluid has-background-dark">
-                <div className="columns">
-                    <div className="column is-three-quarters">
-                        <p className="notification is-primary">
-                            Product list
-                        </p>
-                    </div>
-                    <div className="column">
-                        <p className="notification is-danger">
-                            Shopping cart
-                        </p>
-                    </div>
-                </div>
-            </div>
+            <Router>
+                <Switch>
+                    <Route exact path="/">
+                        {
+                            isLoggedIn()
+                                ? <Store />
+                                : <Login />
+                        }
+                    </Route>
+                    <Route path="/login">
+                        <Login />
+                    </Route>
+                    <Route path="/store">
+                        <Store />
+                    </Route>
+                </Switch>
+            </Router>
         </>
     );
 }

@@ -1,0 +1,20 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "admin": true,
+      "name": "Dwayne",
+      "email": "dwayne@therock.johnson",
+      "password": "password",
+      "accountBalance": "$59,244,541.89"
+    },
+    {
+      "id": 2,
+      "admin": false,
+      "name": "Kevin",
+      "email": "kevin@therock.johnson",
+      "password": "notpassword",
+      "accountBalance": "$3.57"
+    }
+  ]
+}

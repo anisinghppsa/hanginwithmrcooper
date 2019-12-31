@@ -1,0 +1,84 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "name": "WWE Champion Belt",
+      "imageUrl": "images/belt.jpg",
+      "price": "$35,109.46",
+      "rating": 1,
+      "description": "Holds up even the heaviest of pants."
+    },
+    {
+      "id": 2,
+      "name": "BFG-9000",
+      "imageUrl": "images/bfg.jpg",
+      "price": "$11.01",
+      "rating": 4,
+      "description": "A very large plasma weapon."
+    },
+    {
+      "id": 3,
+      "name": "The People's Eyebrow",
+      "imageUrl": "images/eyebrow.jpg",
+      "price": "$65.10",
+      "rating": 1,
+      "description": "I know you can smell it."
+    },
+    {
+      "id": 4,
+      "name": "Nemean Lion Hat",
+      "imageUrl": "images/hat.jpg",
+      "price": "$107.87",
+      "rating": 2,
+      "description": "100% Unbleached Lion Face"
+    },
+    {
+      "id": 5,
+      "name": "San Andreas Helicopter",
+      "imageUrl": "images/helicopter.jpg",
+      "price": "$449.85",
+      "rating": 3,
+      "description": "It's not your fault I couldn't think of a better pun."
+    },
+    {
+      "id": 6,
+      "name": "Maui's Magical Fish Hook",
+      "imageUrl": "images/hook.jpg",
+      "price": "priceless",
+      "rating": 5,
+      "description": "You're welcome."
+    },
+    {
+      "id": 7,
+      "name": "Cheat Day",
+      "imageUrl": "images/muchpizza.jpg",
+      "price": "$707.73",
+      "rating": 2,
+      "description": "You pay for what you don't eat."
+    },
+    {
+      "id": 8,
+      "name": "Jumanji Pieces",
+      "imageUrl": "images/pieces.jpg",
+      "price": "$1.00",
+      "rating": "N/A",
+      "description": "You won't be able to stop playing."
+    },
+    {
+      "id": 9,
+      "name": "Tank-SUV",
+      "imageUrl": "images/suv.jpg",
+      "price": "$486,456.75",
+      "rating": 3,
+      "description": "A pretty cool car."
+    },
+    {
+      "id": 10,
+      "name": "Tooth Fairy Wand",
+      "imageUrl": "images/wand.jpg",
+      "price": "$188.79",
+      "rating": 0,
+      "description": "This movie shouldn't have existed."
+    }
+  ]
+}
