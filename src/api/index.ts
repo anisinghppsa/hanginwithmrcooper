@@ -1,7 +1,11 @@
 export type ProductDataModel = {
   id: number,
-  rating: string
-  // Fill in DATA MODEL (use products.json for reference) 
+  name: string,
+  imageUrl: string,
+  price: string,
+  rating: number,
+  description: string,
+  stock: number
 }
 
 export type UserDataModel = {

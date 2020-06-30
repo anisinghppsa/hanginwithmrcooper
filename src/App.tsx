@@ -7,7 +7,7 @@ import { ProductDetails } from './ProductDetails';
 
 export const App: React.SFC = () => {
     return (
-        <>
+        <Router>
             <section className="hero is-dark">
                 <div className="hero-body">
                     <div className="container">
@@ -16,26 +16,24 @@ export const App: React.SFC = () => {
                     </div>
                 </div>
             </section>
-            <Router>
-                <Switch>
-                    <Route path="/login">
-                        <Login />
-                    </Route>
-                    <Route path="/store">
-                        <Store />
-                    </Route>
-                    <Route path="/details/:id">
-                        <ProductDetails />
-                    </Route>
-                    <Route path="/">
-                        {
-                            isLoggedIn()
-                                ? <Redirect to="/store" />
-                                : <Redirect to="login" />
-                        }
-                    </Route>
-                </Switch>
-            </Router>
-        </>
+            <Switch>
+                <Route path="/login">
+                    <Login />
+                </Route>
+                <Route path="/store">
+                    <Store />
+                </Route>
+                <Route path="/details/:id">
+                    <ProductDetails />
+                </Route>
+                <Route path="/">
+                    {
+                        isLoggedIn()
+                            ? <Redirect to="/store" />
+                            : <Redirect to="/login" />
+                    }
+                </Route>
+            </Switch>
+        </Router>
     );
 }
