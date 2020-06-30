@@ -3,8 +3,8 @@
 # Preliminary Stuff
 ## Install Before Proceeding
 + [Visual Studio Code](https://code.visualstudio.com/Download)
-Install all of the components for Git checked by default in the wizard.
 + [Git (for Windows!)](https://git-scm.com/download/win)
+Install all of the components checked by default in the wizard.
 ## Playgrounds
 + [JSFiddle](http://jsfiddle.net/)
 + [TypeScript Playground](http://www.typescriptlang.org/play/)
