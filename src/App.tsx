@@ -1,11 +1,11 @@
 import * as React from 'react';
 import { isLoggedIn } from "./api";
-import { BrowserRouter as Router, Switch, Route, Redirect} from 'react-router-dom';
+import { BrowserRouter as Router, Switch, Route, Redirect } from 'react-router-dom';
 import { Login } from './Login';
 import { Store } from './Store';
 import { ProductDetails } from './ProductDetails';
 
-export const App: React.SFC = () => {
+export const App: React.FC = () => {
     return (
         <Router>
             <section className="hero is-dark">

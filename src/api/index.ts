@@ -59,7 +59,7 @@ export const login = (email: string, password: string): Promise<any> => {
     setTimeout(function() {
       if (user) {
         localStorage.setItem("userId", user.id);
-        resolve();
+        resolve("");
       } else {
         reject(invalidCredentials);
       }
