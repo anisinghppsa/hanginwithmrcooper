@@ -20,15 +20,25 @@ Install all of the components checked by default in the wizard.
 + [Arrays](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array)
 + [Objects](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object)
 + [Promises](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise)
-+ [Spread operator](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Spread_operator)
++ [Async/Await](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Asynchronous/Async_await)
++ [Sets](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Set)
++ [Maps](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Map)
 + [Rest parameters](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/rest_parameters)
 + [Destructuring assignment](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Destructuring_assignment)
 + [Default function parameters](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/Default_parameters)
 
+##### Operators
++ [Optional Chaining](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Optional_chaining)
++ [Nullish Operator](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Nullish_coalescing_operator)
++ [Unary Plus](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Unary_plus)
++ [Spread operator](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Spread_operator)
+
 ##### React
 + [Overview](https://reactjs.org/docs/react-api.html)
-+ [Components](https://reactjs.org/docs/react-component.html)
 + [Tutorial](https://reactjs.org/tutorial/tutorial.html)
++ [Components](https://reactjs.org/docs/react-component.html)
++ [Fragments](https://reactjs.org/docs/fragments.html)
++ [Context](https://reactjs.org/docs/context.html)
 + [Hooks](https://reactjs.org/docs/hooks-intro.html)
 + [Router](https://reacttraining.com/react-router/web/example/basic)
 
@@ -36,18 +46,15 @@ Install all of the components checked by default in the wizard.
 + [Basics](https://www.typescriptlang.org/docs/handbook/basic-types.html)
 + [Variable Declarations](https://www.typescriptlang.org/docs/handbook/variable-declarations.html)
 + [Interfaces](https://www.typescriptlang.org/docs/handbook/interfaces.html)
++ [Enums](https://www.typescriptlang.org/docs/handbook/enums.html)
 + [Functions](https://www.typescriptlang.org/docs/handbook/functions.html)
 + [Generics](https://www.typescriptlang.org/docs/handbook/generics.html)
++ [Discriminated Unions](https://www.typescriptlang.org/docs/handbook/typescript-in-5-minutes-func.html#discriminated-unions)
 + [Namespaces](https://www.typescriptlang.org/docs/handbook/namespaces.html)
 + [Type Inference](https://www.typescriptlang.org/docs/handbook/type-inference.html)
 
-##### Lodash
-This is just for reference, but make sure you understand chaining and are familiar with the common iteration functions like map, filter, and reduce.
-+ [Lodash Documentation](https://lodash.com/docs/)
-
-##### Moment
-This is also just for reference. Note that "moment" objects are mutable, so make sure you understand how to go about creating new instances from existing ones and manipulating them from there.
-+ [Moment Documentation](https://momentjs.com/docs/)
+##### Redux (maybe)
++ [Tutorial](https://redux.js.org/tutorials/essentials/part-1-overview-concepts)
 
 # Project Stuff
 
@@ -60,8 +67,8 @@ git clone https://github.com/strictlyaformality/hanginwithmrcooper
 To run the project (this can be from a regular cmd/terminal window):
 ```bash
 cd hanginwithmrcooper
-yarn install
-yarn start
+npm install
+npm start
 ```
 
 If you don't see any terrifying red text or get flooded with errors, you should be able to navigate to
@@ -81,4 +88,9 @@ in your browser to view the application skeleton.
 7. Enhance the shopping cart to display the user's name and account balance. If the cart total exceeds the account balance, the user should not be able to checkout.
 8. Add error handling to the application. API calls will fail if the user is not logged in. The user should be redirected to the login page in these cases.
 9. Add a route for logging out. Also add the appropriate link to **App.tsx**. Redirect to the login page after successfully logging out.
-10. Convert all class components to functional components. Use the hooks API as necessary to regain functionality.
+10. Convert uses of local state to Context API + hooks where applicable. (useReducer + useContext)
+
+### Bonus
+- More advanced tasks
+- Storybook
+- Testing
