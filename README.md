@@ -60,7 +60,7 @@ Install all of the components checked by default in the wizard.
 
 To get the source code on your machine, open up Git Bash, navigate to the folder you want to store things in, and run:
 ```bash
-git clone https://github.com/strictlyaformality/hanginwithmrcooper
+git clone https://github.com/anisinghppsa/hanginwithmrcooper
 ```
 **Tip:** You can **paste** into a bash/cmd window by **right-clicking** on it.
 
