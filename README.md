@@ -53,7 +53,7 @@ Install all of the components checked by default in the wizard.
 + [Namespaces](https://www.typescriptlang.org/docs/handbook/namespaces.html)
 + [Type Inference](https://www.typescriptlang.org/docs/handbook/type-inference.html)
 
-##### Redux (maybe)
+##### Redux
 + [Tutorial](https://redux.js.org/tutorials/essentials/part-1-overview-concepts)
 
 # Project Stuff
